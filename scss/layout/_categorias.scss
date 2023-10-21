@@ -65,10 +65,10 @@
     }
     }
     #categoria1{
-      @include background-image('../img/catAnillos2.jpeg', center, no-repeat, auto, center);
+      @include background-image('../img/catAnillos2.jpeg', center, no-repeat, cover, center);
     }
     #categoria2{
-      @include background-image('../img/aros.jpeg', center, no-repeat, center, center);
+      @include background-image('../img/aros.jpeg', center, no-repeat, cover, center);
     }
     #categoria3{
       @include background-image('../img/catCollar.jpeg', top, no-repeat, cover, center);

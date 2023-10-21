@@ -200,12 +200,18 @@ footer {
   font-size: 17px;
   color: rgb(17, 16, 16);
   background-color: #242038;
-  color: white;
   -webkit-box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+.btn-comprar a, .modal-contenedor .carrito-contenedor .modal-carrito-footer .btn-finalizar-compra a {
+  color: white;
 }
 .btn-comprar:hover, .modal-contenedor .carrito-contenedor .modal-carrito-footer .btn-finalizar-compra:hover {
   background-color: white;
+  color: #242038;
+}
+.btn-comprar:hover a, .modal-contenedor .carrito-contenedor .modal-carrito-footer .btn-finalizar-compra:hover a {
   color: #242038;
 }
 
@@ -552,7 +558,7 @@ footer {
   background-image: url("../img/catAnillos2.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   position: center;
 }
 
@@ -560,7 +566,7 @@ footer {
   background-image: url("../img/aros.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: center;
+  background-size: cover;
   position: center;
 }
 

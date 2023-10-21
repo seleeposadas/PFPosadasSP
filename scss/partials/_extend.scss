@@ -100,12 +100,18 @@
 .btn-comprar {
     @include fuente('Unna-BoldItalic', $fontSizeCelu + 2, rgb(17, 16, 16));
     background-color: #242038;
-    color: white;
     box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    a{
+        color: white;
+    }
 
     &:hover {
         background-color: white;
         color: #242038;
+        a{
+            color: #242038;
+        }
     }
 
 }
