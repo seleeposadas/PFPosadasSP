@@ -1,0 +1,176 @@
+.cont-principal-tienda {
+    position: absolute;
+    height: 100vh;
+    margin-top: -60px;
+    //top: 20;
+    //left: 50;
+
+}
+
+.tienda-grid {
+    border-top-right-radius: 60%;
+    border-top-left-radius: 60%;
+    display: grid;
+    grid-template-columns: 0.6fr 2.4fr;
+    grid-template-rows: .4fr 10fr;
+    gap: 5px 10px;
+    grid-auto-flow: row;
+    align-content: space-evenly;
+    grid-template-areas:
+        "tienda-header tienda-header"
+        "tienda-filtro tienda-contendor-productos";
+    margin-bottom: 15px;
+}
+
+.tienda-header {
+    grid-area: tienda-header;
+    @include fuente('Poppins Thin', $fontSizeMediana, black);
+    background-color: white;
+    text-align: center;
+
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+
+    h1 {
+        margin: 25px;
+    }
+}
+
+
+
+.tienda-filtro {
+    @include fuente('Poppins Regular', $fontSizeMediana, black);
+    border-right: 1px solid rgba(67, 64, 64, 0.415);
+    font-size: 18px;
+    grid-area: tienda-filtro;
+    margin-bottom: 70px;
+
+    #sidebar {
+        h5{
+            margin: 15px;
+        }
+        margin: 15px;
+        border-radius: 15px;
+        @include sizes(100%, 93%);
+        border-width: 1px 0;
+        ul#categoria-filtro{
+            margin: 5px 15px;
+            li{
+                padding: 3px 30px;
+                border: solid rgba(109, 33, 157, 0.212);
+                border-radius: 10px;
+                margin: 5px 3px;
+                &:hover{
+                    background-color:  $colorRosa4;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .form-filtro {
+        border: 1px solid rgba(#000000, .2);
+        border-radius: 5px;
+        margin: 4px 10px;
+        width: 95%;
+        padding: 4px;
+        font-size: 15px;
+    }
+
+    .filtro-content-btn {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            background-color: $colorDorado5;
+            border: none;
+            border-radius: 5px;
+            margin: 2px 0;
+            padding: 5px;
+            font-size: 15px;
+            cursor: pointer;
+
+            &:hover {
+                color: black;
+                background-color: transparent;
+                border: 1px solid $colorDorado5;
+            }
+        }
+    }
+
+}
+
+.tienda-contendor-productos {
+    grid-area: tienda-contendor-productos;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 70px;
+    @include max-sizes(100%, 100%);
+
+    .tarjeta-productos-tienda {
+        background-color: white;
+        @extend .tarjeta-productos;
+        @include sizes(45%, 18%);
+
+        img {
+            @include max-sizes(300px, auto);
+        }
+
+        .tarjeta-producto-cuerpo {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            //flex-wrap: no-wrap;
+            justify-content: space-around;
+
+            h4.tarjeta-tienda-titulo {
+                margin: 2px;
+                overflow: hidden;
+                @include fuente('Poppins Black', $fontSizeMediana - 4, black);
+            }
+
+            p.tarjeta-tienda-precio {
+                margin: 3px;
+                @include fuente('Poppins Thin', $fontSizeChica - 4, black);
+                overflow: hidden;
+            }
+
+            button.btn-agregar-al-carrito-tienda {
+                align-items: end;
+                padding: 3% 18%;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                background-color: $colorRosa3;
+                border: none;
+                margin-top: 15px;
+                -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.25);
+                @include fuente('Unna Thin', 13px, rgb(30, 30, 30));
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #242038;
+                    color: white;
+                }
+            }
+        }
+
+        border-radius: 6px;
+        border: none;
+    }
+}
+
+.footer-tienda {
+    margin-top: 170vh;
+}

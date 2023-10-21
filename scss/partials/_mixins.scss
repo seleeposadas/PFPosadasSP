@@ -1,0 +1,40 @@
+@mixin sizes($alto, $ancho){
+    width: $ancho;
+    height: $alto;
+}
+@mixin max-sizes($alto, $ancho){
+    max-width: $ancho;
+    max-height: $alto;
+}
+@mixin background-image($img, $backposition, $backrepeat, $backsize, $position){
+    background-image: url($img);
+    background-position: $backposition;
+    background-repeat: $backrepeat;
+    background-size: $backsize;
+    position: $position;
+}
+@mixin fuente($fuente, $tamanio, $color){
+    font-family: $fuente;
+    font-size: $tamanio;
+    color:$color;
+}
+
+@mixin grilla($display, $tamanioColumna1, $tamanioColumna2, $tamanioColumna3, $tamanioColumna4, $gap){
+    display: $display;
+    grid-template-columns: $tamanioColumna1 $tamanioColumna2 $tamanioColumna3 $tamanioColumna4;
+    gap: $gap;
+}
+@mixin contenedor($padding) {
+    width: 100%;
+    padding-right: $padding;
+    padding-left: $padding;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+@mixin flex($display, $flex-direction, $justifyCont, $alignItemV){
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justifyCont;
+    align-items: $alignItemV;
+}

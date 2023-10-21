@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "nombre": "Anillo de oro",
+        "categoria": "anillo",
+        "stock": 5,
+        "precio": 5000,
+        "rutaImagen": "anillos1.jpeg"
+    },
+    {
+        "id": 2,
+        "nombre": "Aros de oro",
+        "categoria": "aros",
+        "stock": 7,
+        "precio": 2650,
+        "rutaImagen": "aros.jpeg"
+    },
+    {
+        "id": 3,
+        "nombre": "Collar de oro 1",
+        "categoria": "collar",
+        "stock": 4,
+        "precio": 4500,
+        "rutaImagen": "collar2.jpeg"
+    },
+    {
+        "id": 4,
+        "nombre": "aros",
+        "categoria": "aros",
+        "stock": 3,
+        "precio": 2800,
+        "rutaImagen": "aros2.jpeg"
+    },
+    {
+        "id": 5,
+        "nombre": "pulsera",
+        "categoria": "pulsera",
+        "stock": 3,
+        "precio": 5300,
+        "rutaImagen": "pulsera.jpeg"
+    },
+    {
+        "id": 6,
+        "nombre": "Set de oro rosado",
+        "categoria": "set",
+        "stock": 3,
+        "precio": 7600,
+        "rutaImagen": "set2.jpeg"
+    },
+    {
+        "id": 7,
+        "nombre": "collar",
+        "categoria": "collar",
+        "stock": 7,
+        "precio": 2650,
+        "rutaImagen": "collar10.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "set",
+        "categoria": "set",
+        "stock": 7,
+        "precio": 8650,
+        "rutaImagen": "set1.jpeg"
+    }
+]

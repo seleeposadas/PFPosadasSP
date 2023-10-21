@@ -1,0 +1,45 @@
+.banner-tienda-img{
+    @include background-image('../img/accesorio (1).png', center, no-repeat, cover, relative);
+    @include sizes(18rem, 100%);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .banner-tienda-content{
+        align-items: center;
+        overflow: hidden;
+        text-align: center;
+        @include sizes(100%, 100%);
+        
+        .banner-content-tarjeta{
+            @include sizes(100%, 100%);
+            background-color: rgba(180, 173, 214, 0.613);
+            overflow: hidden;
+            .banner-content-tarjeta-header{
+                @include fuente('Poppins-Bold', $fontSizeCelu + 3, black);
+                margin-top: 60px;
+                margin-bottom: 20px;
+            }
+            .banner-content-tarjeta-contenido{
+               
+                overflow: hidden;
+                text-overflow: ellipsis;
+                @include fuente('Poppins-Regular', $fontSizeCelu + 2, rgb(17, 16, 16));
+                .banner-buscar-form{
+                    .form-buscar{
+                        padding: 5px;
+                        @include sizes(100%, 20%);
+                        border: none;
+                        border-radius: 10px;
+                    }
+                    .btn-buscar{
+                        padding: 3px 10px;
+                        border-radius: 10px;
+                        border: none;
+                        margin-left: 3px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

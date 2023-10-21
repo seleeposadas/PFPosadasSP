@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Icono de la pestaña-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/ofirashop_logo.png"
+      sizes="32x32"
+    />
+    <!--buscar un favicon-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tienda de Accesorios - Inicio</title>
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav class="nav-content padre-flex-row-position">
+        <div class="nav-logo">
+          <a class="navbar-logo" href="../index.html">
+            <img
+              src="./img/ofirashop_logo.png"
+              alt="Logo de la tienda - mujer con collar y aros."
+            />
+          </a>
+        </div>
+        <div class="nav-navegacion">
+          <div class="nav-menu">
+            <ul class="nav-menu-list">
+              <li class="nav-menu-item"><a href="./index.html">INICIO</a></li>
+              <li class="nav-menu-item">
+                <a id="tienda" href="./pages/tienda.html">TIENDA</a>
+              </li>
+              <li class="nav-menu-item"><a>NOSOTROS</a></li>
+              <li class="nav-menu-item"><a>CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-area">
+          <div class="nav-area-login">
+            <a class="login"
+              ><span id="verOcultar"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="nav-area-carrito">
+            <a class="carrito" aria-disabled="true" href="#" id="mostrarCarrito"
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                  /></svg></span
+              ><span id="cantidadCarrito" class="cantidadCarrito"></span
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article class="banner-inicio-img">
+        <div class="banner-content">
+          <div class="banner-content-tarjeta">
+            <div class="banner-content-tarjeta-header">
+              <h1 class="titulo">Accesorios que inspiran tu estilo.</h1>
+            </div>
+            <div class="banner-content-tarjeta-contenido">
+              <p class="tarjeta-banner-contenido">
+                Detalles que hacen la diferencia
+              </p>
+            </div>
+            <div class="banner-content-tarjeta-footer">
+              <button class="btn-comprar">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="contenedor-principal">
+        <article class="banner-info-compra">
+          <div class="info-compra">
+            <div class="info-compra-contenido">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 640 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                />
+              </svg>
+              <div class="info-compra-content-body">
+                <h2 class="info-compra-body-titulo">ENVIOS A DOMICILIO</h2>
+                <p class="info-compra-body-texto">Dentro de las 24hs.</p>
+              </div>
+            </div>
+            <div class="info-compra-contenido">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"
+                />
+              </svg>
+              <div class="info-compra-content-body">
+                <h2 class="info-compra-body-titulo">COMPRA CON SEGURIDAD</h2>
+                <p class="info-compra-body-texto">Tus datos no se comparten.</p>
+              </div>
+            </div>
+            <div class="info-compra-contenido">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 512 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                />
+              </svg>
+              <div class="info-compra-content-body">
+                <h2 class="info-compra-body-titulo">
+                  TODOS LOS MEDIOS DE PAGO
+                </h2>
+                <p class="info-compra-body-texto">
+                  Recibimos todos los medios de pago
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <section class="categorias">
+          <div class="categorias-columna">
+            <div
+              class="categorias-content-categoria-tarjeta-grande"
+              id="categoria1"
+            >
+              <div class="content-categoria-tarjeta-footer">
+                <div class="categoria-tarjeta-footer-content">
+                  <h3 class="titulo-categoria">Collares</h3>
+                  <button class="btn-ver-mas">Ver Más</button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="categorias-content-categoria-tarjeta-chica"
+              id="categoria2"
+            >
+              <div class="content-categoria-tarjeta-footer">
+                <div class="categoria-tarjeta-footer-content">
+                  <h2 class="titulo-categoria">Aros</h2>
+                  <button class="btn-ver-mas">Ver Más</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="categorias-columna">
+            <div
+              class="categorias-content-categoria-tarjeta-chica"
+              id="categoria3"
+            >
+              <div class="content-categoria-tarjeta-footer">
+                <div class="categoria-tarjeta-footer-content">
+                  <h3 class="titulo-categoria">Relojes</h3>
+                  <button class="btn-ver-mas">Ver Más</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="categorias-content-categoria-tarjeta-grande"
+              id="categoria4"
+            >
+              <div class="content-categoria-tarjeta-footer">
+                <div class="categoria-tarjeta-footer-content">
+                  <h2 class="titulo-categoria">Anillos</h2>
+                  <button class="btn-ver-mas">Ver Más</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="nuevos-items">
+          <div class="nuevos-items-header">
+            <h4>NUEVOS ITEMS</h4>
+          </div>
+          <div class="nuevos-items-cuerpo">
+            <button class="items-anterior">
+              <span class="carrousel-control-icono" id="btn-anterior"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 320 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                  /></svg
+              ></span>
+            </button>
+            <div id="contenedorProductos"></div>
+            <button class="items-siguiente">
+              <span class="carrousel-control-icono" id="btn-siguiente"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 320 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  /></svg
+              ></span>
+            </button>
+          </div>
+        </section>
+      </div>
+      <article class="banner-suscribete">
+        <div class="banner-suscribete-header">
+          <h6 class="banner-suscribete-titulo">Queres ver más?</h6>
+          <p>Sucribete para recibir las novedades de nuestros productos</p>
+        </div>
+        <div class="banner-suscribete-form">
+          <input
+            type="text"
+            class="form-suscribete"
+            placeholder="ejemplo@email.com"
+          />
+          <input type="button" value="SUSCRIBETE" class="btn-suscribete" />
+        </div>
+      </article>
+      <!--modal carrito-->
+      <aside class="modal-contenedor" id="modal-contenedor">
+        <button id="cerrarCarrito">Cerrar</button>
+        <div class="carrito-contenedor" id="carrito-contenedor-prod"></div>
+      </aside>
+    </main>
+    <footer class="footer">
+      <div class="contenedor-footer">
+        <div class="content-footer">
+          <div class="content-footer-1">
+            <div class="content-footer-logo">
+              <img
+              src="./img/ofirashop_logo.png"
+              alt="Logo de la tienda - mujer con collar y aros."
+            />
+            </div>
+            <div class="content-footer-copyright">
+              <p class="footer-copyright">Selene Posadas</p>
+            </div>
+          </div>
+
+          <div class="content-footer-redes">
+            <div class="footer-redes">
+              <ul class="footer-redes-list">
+                <li class="footer-redes-item"><a><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="footer-redes-item"><a><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="footer-redes-item"><a><i class="fa-brands fa-tiktok"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

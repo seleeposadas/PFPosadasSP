@@ -1,0 +1,66 @@
+.contenedor-footer {
+    @include fuente('Poppins', $fontSizeChica, black);
+    background: #B6ACDA;
+    background: -moz-linear-gradient(-45deg, #B6ACDA 0%, #EEB0CC 60%, #F3BDD4 100%);
+    background: -webkit-linear-gradient(-45deg, #B6ACDA 0%, #EEB0CC 60%, #F3BDD4 100%);
+    background: linear-gradient(135deg, #B6ACDA 0%, #EEB0CC 60%, #F3BDD4 100%);
+    height: 110px;
+    align-items: center;
+
+    .content-footer {
+        @extend .padre-flex-row-position;
+        justify-content: space-between;
+
+        a {
+            color: black;
+        }
+
+        align-self: center;
+
+        .content-footer-redes {
+            margin: 5px 50px;
+
+            .footer-redes {
+                .footer-redes-list {
+                    @include flex(flex, row, space-around, center);
+                    margin: 5px 20px;
+
+                    li {
+                        margin: 10px;
+                        font-size: 22px;
+                        border-radius: 50px;
+
+                        &:hover {
+                            -webkit-box-shadow: 2px 6px 14px 1px #000000;
+                            box-shadow: 2px 6px 14px 1px #000000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-footer-1 {
+            @include flex(flex, row, space-between, center);
+            justify-self: start;
+            align-items: center;
+            margin: 5px 50px;
+
+            .content-footer-copyright {
+                margin: 5px 20px;
+                font-size: 22px;
+                justify-self: center;
+                align-self: center;
+            }
+
+            .content-footer-logo {
+                margin: 5px 20px;
+                align-self: center;
+
+                img {
+                    @include sizes(80px, 80px);
+                }
+            }
+        }
+
+    }
+}

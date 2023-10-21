@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Icono de la pestaña-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/img/ofirashop_logo.png"
+      sizes="32x32"
+    />
+    <!--buscar un favicon-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Ofira Shop - Tienda</title>
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav class="nav-content padre-flex-row-position">
+        <div class="nav-logo">
+          <a class="navbar-logo" href="../index.html">
+            <img
+              src="../img/ofirashop_logo.jpg"
+              alt="Logo de la tienda - mujer con collar y aros."
+            />
+          </a>
+        </div>
+        <div class="nav-navegacion">
+          <div class="nav-menu">
+            <ul class="nav-menu-list">
+              <li class="nav-menu-item"><a href="/index.html">INICIO</a></li>
+              <li class="nav-menu-item"><a id="tienda" href="/pages/tienda.html">TIENDA</a></li>
+              <li class="nav-menu-item"><a>NOSOTROS</a></li>
+              <li class="nav-menu-item"><a>CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-area">
+          <div class="nav-area-login">
+            <a class="login"
+              ><span id="verOcultar"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="nav-area-carrito">
+            <a
+              class="carrito"
+              aria-disabled="true"
+              href="#"
+              id="mostrarCarrito"
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                  /></svg></span
+            ><span id="cantidadCarrito" class="cantidadCarrito"></span></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <article class="banner-tienda-img">
+      <div class="banner-tienda-content">
+        <div class="banner-content-tarjeta">
+          <div class="banner-content-tarjeta-header">
+            <h1 class="titulo">Busca tu producto.</h1>
+          </div>
+          <div class="banner-content-tarjeta-contenido">
+            <div class="banner-buscar-form">
+              <input
+                type="text"
+                class="form-buscar"
+                placeholder="Ingrese un nombre.."
+                id="input-buscar"
+              />
+              <button class="btn-buscar" id="btn-buscar">🔎</button>
+            </div>
+        </div>
+      </div>
+    </article>
+    <section class="contenedor-principal cont-principal-tienda" id="cont-tienda">
+      <div class="tienda-grid">
+        <div class="tienda-header">
+          <h1 class="tienda-titulo">Tienda</h1>
+        </div>
+        <div class="tienda-filtro">
+          <div id="sidebar">
+            <h5>Filtrar por:</h5>
+            <h4>Categoría</h4>
+            <ul id="categoria-filtro">
+            </ul>
+            <h4>Rango de Precios</h4>
+            <input type="number" id="precio-min" class="form-filtro" placeholder="Precio mínimo">
+            <input type="number" id="precio-max" class="form-filtro" placeholder="Precio máximo">
+            <div class="filtro-content-btn">
+                <button id="aplicar-filtros" class="btn-aplicar-filtros">Aplicar Filtros</button>
+                <button id="limpiar-filtros" class="btn-limpiar-filtros">Limpiar Filtros</button>
+            </div>
+        </div>
+        </div>
+        <div class="tienda-contendor-productos" id="tienda-cont-productos">
+          
+        </div>
+        </div>
+    </section>
+    <!--modal carrito-->
+    <aside class="modal-contenedor" id="modal-contenedor">
+      <button id="cerrarCarrito">Cerrar</button>
+      <div class="carrito-contenedor" id="carrito-contenedor-prod"></div>
+      </div>
+  </aside>
+  
+  </main>
+  <footer class="footer footer-tienda">
+    <div class="contenedor-footer">
+      <div class="content-footer">
+        <div class="content-footer-1">
+          <div class="content-footer-logo">
+            <img
+            src="../img/ofirashop_logo.png"
+            alt="Logo de la tienda - mujer con collar y aros."
+          />
+          </div>
+          <div class="content-footer-copyright">
+            <p class="footer-copyright">Selene Posadas</p>
+          </div>
+        </div>
+
+        <div class="content-footer-redes">
+          <div class="footer-redes">
+            <ul class="footer-redes-list">
+              <li class="footer-redes-item"><a><i class="fa-brands fa-facebook"></i></a></li>
+              <li class="footer-redes-item"><a><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="footer-redes-item"><a><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <script src="/js/script.js"></script>
+  </body>
+</html>

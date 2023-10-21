@@ -1,0 +1,36 @@
+.banner-suscribete{
+    @include flex(flex, row, center, center);
+    @include sizes(35%, 100%);
+    background-color: #FFE4D6;
+    margin-top: 8px;
+    display: none;
+    
+    .banner-suscribete-header{
+        @include sizes(30%, 35%);
+        border-right: 1px solid rgba(0,0,0,.1);
+        margin: 8px;
+        padding: 16px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    .banner-suscribete-form{
+        @include sizes(60%, 35%);
+        margin: 8px;
+        padding: 16px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        input.form-suscribete{
+            margin-right: 10px;
+            border-radius: 10px;
+            border: none;
+            padding: 3px;
+        }
+        input.btn-suscribete{
+            border-radius: 10px;
+            padding: 3px 8px;
+            border: none;
+        }
+    }
+}

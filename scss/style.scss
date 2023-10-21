@@ -1,0 +1,24 @@
+@import "partials/_reset.scss";
+@import "partials/_fonts.scss";
+@import "partials/_variables.scss";
+@import "partials/_mixins.scss";
+@import "partials/_extend.scss";
+/*Componentes de la pagina*/
+@import "layout/navbar";
+@import "layout/footer";
+@import "layout/banner";
+@import "layout/categorias";
+@import "layout/newitems";
+@import "layout/banner-info-compra";
+@import "layout/banner-suscripcion";
+@import "layout/tienda";
+@import "layout/modal-carrito";
+@import "layout/tBanner-busqueda";
+
+
+.contenedor-principal{
+    @include contenedor(50px);
+}
+
+/*Para hacer responsive, esto debe ir al final*/
+@import "partials/queries";

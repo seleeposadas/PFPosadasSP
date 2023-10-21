@@ -1,0 +1,92 @@
+
+.modal-contenedor {
+    display: none; 
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: end;
+    background-color: rgba(246, 243, 239, 0.969);
+    @include sizes(100%, 35%);
+    //padding: 4rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    gap: 1rem;
+
+    button#cerrarCarrito {
+        @extend .btn-ver-mas;
+        margin: 5px 10px;
+        @include sizes(5%, auto);
+    }
+
+    .carrito-contenedor {
+        @include sizes(95%, auto);
+
+        .modal-carrito-header {
+            font-size: 15px;
+            padding-bottom: 10px;
+            margin: 10px;
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            @include sizes(8%, auto);
+        }
+
+        .modal-carrito-body {
+            @include sizes(82%, auto);
+            align-self: flex-start;
+            h4{
+                text-align: center;
+            }
+            .modal-carrito-product {
+                @include flex(flex, row, space-around, center);
+                -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.15);
+                box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.15);
+                margin: 5px;
+                padding: 10px;
+                border: none;
+                border-radius: 15px;
+                background-color: white;
+    
+                .imgProducto {
+                    @include sizes(150px, auto);
+                    //border-radius: 10px;
+                }
+    
+                h3 {
+                    @include fuente('Poppins', 18px, black);
+                }
+    
+                p {
+                    @include fuente('Poppins', 15px, black);
+                }
+                span{
+                    cursor: pointer;
+                }
+                
+            }
+        }
+        .modal-carrito-footer {
+            align-self: end;
+            @include sizes(10%, auto);
+            background-color: rgb(239, 246, 244);
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
+            @include flex(flex, column, flex-end, center);
+            .total-contenedor {
+                font-size: 20px;
+                margin: 2px;
+            }
+            .btn-finalizar-compra{
+                @extend .btn-comprar;
+                margin: 3px;
+                padding: 2px 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .total-contenedor{
+        text-align: center;
+        @include fuente('Poppins Black', 20px, black);
+        margin: 15px;
+        
+    }
+}
